@@ -1,0 +1,37 @@
+@use '../../helpers' as *;
+
+.mission {
+	&__inner-card-box {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
+
+	&__card-item {
+		justify-content: start;
+		align-items: start;
+		gap: remm(16);
+		padding: fluid(60, 40) fluid(60, 40) fluid(60, 40) fluid(60, 40);
+
+		@include desktop {
+			gap: remm(20);
+		}
+		&-title {
+			margin: 0;
+		}
+	}
+
+	&__card-list {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(30, 60);
+		@include tablet-above {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+	&__overview-text {
+		align-items: start;
+	}
+}

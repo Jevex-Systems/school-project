@@ -1,0 +1,11 @@
+@use '../../helpers' as *;
+
+.key {
+	display: flex;
+	width: fit-content;
+	margin-inline: auto;
+	padding: remm(8) remm(16);
+	border-radius: remm(6);
+	border: var(--border-gray-15);
+	background-color: var(--absolute-white);
+}

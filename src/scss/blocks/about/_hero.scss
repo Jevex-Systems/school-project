@@ -1,0 +1,77 @@
+@use '../../helpers' as *;
+.main {
+	margin-top: remm(200);
+	@include desktop {
+		margin-top: remm(230);
+	}
+}
+.section-about-hero {
+	max-width: 1920px;
+	margin-inline: auto;
+	padding-inline: remm(16);
+	@include tablet-above {
+		padding-inline: remm(80);
+	}
+	@include desktop {
+		padding-inline: remm(50);
+	}
+}
+.hero {
+	display: flex;
+	padding: fluid(150, 50) fluid(120, 30);
+	gap: remm(20);
+	box-shadow: var(--shadow-main-etc);
+
+	@include tablet-above {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: remm(50);
+	}
+
+	@include desktop {
+		border-radius: remm(12);
+		box-shadow: var(--shadow-big-box);
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: fluid(200, 100);
+		height: fluid(200, 100);
+		background-image: url('/images/about/svg/half-cub.svg');
+		background-repeat: no-repeat;
+		background-size: contain;
+		z-index: 1;
+	}
+
+	&__inners {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: remm(10);
+
+		@include tablet-above {
+			align-items: start;
+		}
+	}
+	@include tablet-above {
+		&__key-btn {
+			margin: 0;
+		}
+	}
+
+	&__about-title {
+		@include tablet-above {
+			text-align: start;
+		}
+	}
+
+	&__text {
+		text-align: center;
+		@include tablet-above {
+			text-align: start;
+		}
+	}
+}

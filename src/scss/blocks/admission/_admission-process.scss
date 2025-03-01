@@ -1,0 +1,64 @@
+@use '../../helpers' as *;
+
+.admission {
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: start;
+		row-gap: fluid(100, 53);
+
+		@include mobile-above-l {
+			grid-template-columns: repeat(2, 1fr);
+			column-gap: fluid(50, 30);
+		}
+		@include laptop-above {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		row-gap: remm(51);
+
+		@include desktop {
+			row-gap: remm(71);
+		}
+
+		&-order {
+			max-width: fluid(128, 94);
+			max-height: fluid(106, 72);
+			padding: remm(10) remm(24);
+
+			@include desktop {
+				padding: remm(14) remm(30);
+			}
+			&-span {
+				font-weight: 800;
+				font-family: var(--second-family);
+				@include fluid-text(60, 40);
+			}
+		}
+
+		&-block {
+			justify-content: start;
+			align-items: start;
+			text-align: start;
+			height: 100%;
+			row-gap: fluid(20, 14);
+			padding: fluid(50, 30);
+			z-index: 2;
+
+			&-title {
+				@include fluid-text(30, 26);
+			}
+			&-paragraph {
+				font-size: remm(16);
+				@include desktop {
+					font-size: remm(20);
+				}
+			}
+		}
+	}
+}

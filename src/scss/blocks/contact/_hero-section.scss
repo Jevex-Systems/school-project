@@ -1,0 +1,80 @@
+@use '../../helpers' as *;
+
+.hero {
+	@include tablet-above {
+		display: flex;
+	}
+	@include laptop-above {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: remm(50);
+	}
+	&__title {
+		text-align: start;
+		font-size: remm(26);
+		@include laptop-above {
+			font-size: remm(38);
+		}
+		@include desktop {
+			font-size: remm(48);
+		}
+	}
+	&__paragraph {
+		font-size: remm(16);
+
+		@include desktop {
+			font-size: remm(20);
+		}
+	}
+	&__inner {
+		@include tablet-above {
+			align-items: center;
+		}
+		@include laptop-above {
+			align-items: start;
+		}
+		&-contacts {
+			display: flex;
+			flex-direction: column;
+			row-gap: remm(50);
+		}
+	}
+
+	&__contacts {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		@include laptop-above {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		&-item {
+			width: 100%;
+			background-color: var(--orange-99);
+		}
+
+		&-link {
+			white-space: nowrap;
+			width: 100%;
+			padding: remm(16);
+			border: var(--border-gray-15);
+			border-radius: remm(10);
+			font-size: remm(16);
+			@include desktop {
+				padding: remm(20);
+				font-size: remm(20);
+			}
+			@include hover {
+				background-color: var(--absolute-white);
+				border-color: var(--orange-65);
+				box-shadow: var(--shadow-hover);
+			}
+		}
+		&-icon {
+			width: remm(40);
+			height: remm(40);
+			border-radius: remm(6);
+		}
+	}
+}

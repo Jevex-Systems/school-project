@@ -1,0 +1,231 @@
+@use '../../helpers' as *;
+
+.fee {
+	&__list {
+		display: flex;
+		flex-direction: column;
+		row-gap: fluid(80, 40);
+	}
+	&__item {
+		padding: fluid(60, 30);
+	}
+	&__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: remm(2);
+		border: var(--border-gray-15);
+		border-radius: remm(10);
+		background-color: var(--gray-15);
+		width: 100%;
+		font-size: remm(18);
+		@include desktop {
+			font-size: remm(20);
+		}
+		&-list {
+			display: contents;
+		}
+	}
+	&__program {
+		grid-template-areas:
+			'one-program one-program'
+			'nursery nursery'
+			'one-age-group nursery-years'
+			'one-annual-tuition nursery-tuition'
+			'one-activity-fee nursery-activity-fee'
+			'one-registration-fee nursery-registration-fee'
+			'pre-kindergartens pre-kindergartens'
+			'two-age-group pre-kindergartens-years'
+			'two-annual-tuition pre-kindergartens-tuition'
+			'two-activity-fee pre-kindergartens-activity-fee'
+			'two-registration-fee  pre-kindergartens-registration-fee'
+			'kindergarten kindergarten'
+			'three-age-group kindergarten-years'
+			'three-annual-tuition kindergarten-tuition'
+			'three-activity-fee kindergarten-activity-fee'
+			'three-registration-fee kindergarten-registration-fee';
+
+		@include tablet-above {
+			grid-template-columns: repeat(5, 1fr);
+			grid-template-areas:
+				'program age-group annual-tuition registration-fee activity-fee'
+				'empty empty empty empty empty'
+				'nursery nursery-years nursery-tuition nursery-activity-fee nursery-registration-fee'
+				'pre-kindergartens pre-kindergartens-years pre-kindergartens-tuition pre-kindergartens-activity-fee pre-kindergartens-registration-fee'
+				'kindergarten kindergarten-years kindergarten-tuition kindergarten-activity-fee kindergarten-registration-fee';
+		}
+
+		&-cost {
+			padding: fluid(30, 16) fluid(34, 26);
+			background-color: #fff;
+		}
+	}
+
+	&__services {
+		grid-template-areas:
+			'services services' 'school-care school-care-price'
+			'lang-program lang-program-cost' 'transportation transportation-cost';
+		@include tablet-above {
+			grid-template-areas:
+				'services services' 'empty empty' 'school-care school-care-price'
+				'lang-program lang-program-cost' 'transportation transportation-cost';
+		}
+		&-cost {
+			padding: fluid(30, 16) fluid(34, 26);
+			background-color: #fff;
+		}
+	}
+}
+.pink-bgc {
+	background-color: var(--orange-95);
+}
+.epmty {
+	position: relative;
+	height: remm(20);
+	width: 105%;
+	left: -2.5%;
+	background-color: #fff;
+	grid-area: empty;
+	z-index: 10;
+}
+.program {
+	border-radius: remm(8) 0 0 0;
+}
+.activity-fee {
+	border-radius: 0 remm(8) 0 0;
+}
+.one-program {
+	text-align: center;
+	border-radius: remm(8) remm(8) 0 0;
+	grid-area: one-program;
+}
+.one-age-group {
+	grid-area: one-age-group;
+}
+.one-annual-tuition {
+	grid-area: one-annual-tuition;
+}
+.one-activity-fee {
+	grid-area: one-activity-fee;
+}
+.one-registration-fee {
+	grid-area: one-registration-fee;
+}
+
+.two-age-group {
+	grid-area: two-age-group;
+}
+.two-annual-tuition {
+	grid-area: two-annual-tuition;
+}
+.two-activity-fee {
+	grid-area: two-activity-fee;
+}
+.two-registration-fee {
+	grid-area: two-registration-fee;
+}
+
+.three-kindergarten {
+	grid-area: three-kindergarten;
+}
+.three-age-group {
+	grid-area: three-age-group;
+}
+.three-annual-tuition {
+	grid-area: three-annual-tuition;
+}
+.three-activity-fee {
+	grid-area: three-activity-fee;
+}
+.three-registration-fee {
+	border-radius: 0 0 0 remm(8);
+
+	grid-area: three-registration-fee;
+}
+
+.nursery {
+	text-align: center;
+	@include tablet-above {
+		text-align: start;
+	}
+	grid-area: nursery;
+}
+.nursery-years {
+	grid-area: nursery-years;
+}
+.nursery-tuition {
+	grid-area: nursery-tuition;
+}
+.nursery-activity-fee {
+	grid-area: nursery-activity-fee;
+}
+.nursery-registration-fee {
+	grid-area: nursery-registration-fee;
+}
+
+.pre-kindergartens {
+	text-align: center;
+	@include tablet-above {
+		text-align: start;
+	}
+	grid-area: pre-kindergartens;
+}
+.pre-kindergartens-years {
+	grid-area: pre-kindergartens-years;
+}
+.pre-kindergartens-tuition {
+	grid-area: pre-kindergartens-tuition;
+}
+.pre-kindergartens-activity-fee {
+	grid-area: pre-kindergartens-activity-fee;
+}
+.pre-kindergartens-registration-fee {
+	grid-area: pre-kindergartens-registration-fee;
+}
+
+.kindergarten {
+	text-align: center;
+	@include tablet-above {
+		text-align: start;
+		border-radius: 0 0 0 remm(8);
+	}
+	grid-area: kindergarten;
+}
+.kindergarten-years {
+	grid-area: kindergarten-years;
+}
+.kindergarten-tuition {
+	grid-area: kindergarten-tuition;
+}
+.kindergarten-activity-fee {
+	grid-area: kindergarten-activity-fee;
+}
+.kindergarten-registration-fee {
+	border-radius: 0 0 remm(8) 0;
+	grid-area: kindergarten-registration-fee;
+}
+
+.services {
+	grid-area: services;
+	font-size: fluid(30, 24);
+	border-radius: remm(8) remm(8) 0 0;
+}
+.school-care {
+	grid-area: school-care;
+}
+.school-care-cost {
+	grid-area: school-care-cost;
+}
+.lang-program {
+	grid-area: lang-program;
+}
+.lang-program-cost {
+	grid-area: lang-program-cost;
+}
+.transportation {
+	grid-area: transportation;
+	border-radius: 0 0 0 remm(8);
+}
+.transportation-cost {
+	grid-area: transportation-cost;
+	border-radius: 0 0 remm(8) 0;
+}

@@ -1,0 +1,20 @@
+@use 'global';
+@use 'helpers' as *;
+
+@use 'blocks/globals/bordered-shadow-box';
+@use 'blocks/globals/title_inner';
+@use 'blocks/globals/burger-button';
+@use 'blocks/globals/logo';
+@use 'blocks/globals/key';
+@use 'blocks/globals/icon';
+
+@use 'blocks/academics/header';
+@use 'blocks/academics/hero';
+@use 'blocks/academics/special';
+@use 'blocks/academics/learn';
+@use 'blocks/academics/gallery';
+@use 'blocks/academics/footer';
+
+body {
+	user-select: none;
+}

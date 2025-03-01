@@ -1,0 +1,13 @@
+@use '../../helpers' as *;
+
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: remm(10);
+    border: var(--border-gray-15);
+    background-color: var(--absolute-white);
+    box-shadow: var(--shadow-main);
+    position: relative;
+}

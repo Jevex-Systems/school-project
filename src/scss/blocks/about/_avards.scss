@@ -1,0 +1,65 @@
+@use '../../helpers' as *;
+.avards {
+	&__over-card-container {
+		margin-bottom: fluid(135, 78);
+		&-title {
+			margin: 0;
+		}
+	}
+	&__list-ava-card {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		row-gap: fluid(40, 30);
+		column-gap: remm(40);
+		margin-bottom: fluid(30, 50);
+
+		@include mobile-above-l {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include tablet-above {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+	&__ava-card {
+		justify-content: start;
+		align-items: start;
+		gap: remm(16);
+		height: 100%;
+		padding: fluid(80, 50) fluid(50, 35) fluid(50, 35) fluid(50, 30);
+		&-title {
+			text-align: start;
+		}
+		@include mobile-l {
+			height: auto;
+		}
+
+		@include desktop {
+			gap: remm(20);
+		}
+	}
+
+	&__under-card-container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__arrov-list {
+		display: flex;
+		gap: remm(16);
+		@include desktop {
+			gap: remm(20);
+		}
+	}
+	&__cub-btn {
+		padding: remm(12);
+		@include desktop {
+			padding: remm(14);
+		}
+	}
+	&__title-more {
+		font-size: 18px;
+	}
+}

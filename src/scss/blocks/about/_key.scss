@@ -1,0 +1,15 @@
+@use '../../helpers' as *;
+.key-btn {
+	display: flex;
+	width: fit-content;
+	margin-inline: auto;
+	padding: remm(8) remm(14);
+	border-radius: 0.375rem;
+	border: var(--border-gray-15);
+	background-color: var(--absolute-white);
+
+	@include desktop {
+		border-radius: remm(8);
+		padding: remm(10) remm(20);
+	}
+}

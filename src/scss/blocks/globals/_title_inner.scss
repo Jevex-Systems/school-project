@@ -1,0 +1,13 @@
+@use '../../helpers' as *;
+
+.title-inner {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	gap: fluid(19, 10);
+	margin-bottom: fluid(100, 50);
+	max-width: remm(1000);
+	margin-inline: auto;
+}

@@ -1,0 +1,18 @@
+@use '../../helpers' as *;
+
+.logo {
+	&__image {
+		max-width: fluid(183, 137);
+	}
+}
+
+.header__logo {
+	align-items: center;
+	background: var(--orange-65);
+	padding: remm(18) remm(20);
+	@include desktop {
+		padding: remm(20) remm(24);
+	}
+	border-right: var(--border-gray-15);
+	border-radius: remm(10) 0 0 remm(10);
+}

@@ -1,0 +1,40 @@
+@use '../../helpers' as *;
+
+.special {
+	&__list {
+		display: grid;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		align-items: center;
+		row-gap: fluid(85, 68);
+		column-gap: remm(40);
+
+		@include mobile-above-l {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include tablet-above {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	&__item {
+		justify-content: start;
+		align-items: start;
+		gap: remm(16);
+		padding: fluid(80, 50) fluid(50, 35) fluid(50, 35) fluid(50, 30);
+		height: 100%;
+
+		@include desktop {
+			gap: remm(20);
+		}
+	}
+
+	&__paragraph {
+		font-size: remm(16);
+
+		@include desktop {
+			font-size: remm(20);
+		}
+	}
+}

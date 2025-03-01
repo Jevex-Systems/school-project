@@ -1,0 +1,12 @@
+@use 'global';
+@use 'helpers' as *;
+
+h1 {
+	color: var(--orange-65);
+}
+.wraper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: remm(15);
+}

@@ -1,0 +1,78 @@
+@use '../../helpers' as *;
+.our-team {
+	&__team-list {
+		display: flex;
+		flex-direction: column;
+		gap: remm(40);
+		@include tablet-above {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: remm(40);
+		}
+	}
+	&__container-title {
+		margin: 0;
+	}
+
+	&__team-main-box {
+		justify-content: start;
+		padding: fluid(50, 28);
+		width: 100%;
+		height: 100%;
+	}
+
+	&__title-team-name {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
+		font-size: 20px;
+		text-align: start;
+		line-height: 1.5;
+		color: #333;
+	}
+	&__team-title-box {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: remm(24);
+		width: 100%;
+		gap: fluid(20, 10);
+		@include desktop {
+			margin-bottom: remm(30);
+		}
+		&-inside {
+			display: flex;
+			align-items: center;
+			gap: fluid(16, 10);
+		}
+	}
+
+	&__team-svg {
+		padding: remm(14);
+		border: 2px solid var(--gray-15);
+		border-radius: remm(6);
+		background-color: var(--orange-90);
+		@include tablet-above {
+			padding: remm(16);
+			border-radius: remm(8);
+		}
+	}
+	&__team-text-box {
+		padding: fluid(30, 20);
+		border: 2px solid var(--gray-15);
+		border-radius: remm(10);
+		background-color: var(--orange-97);
+		@include desktop {
+			border-radius: remm(12);
+		}
+		&-title {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 1.5;
+			margin-bottom: fluid(20, 12);
+			text-align: start;
+		}
+		&-text {
+			text-align: start;
+		}
+	}
+}

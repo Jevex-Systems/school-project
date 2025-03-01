@@ -1,0 +1,102 @@
+@use '../../helpers' as *;
+
+.gallery {
+	&__menu {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: remm(10);
+		margin-bottom: fluid(150, 80);
+
+		@include desktop {
+			gap: remm(15);
+		}
+	}
+
+	&__item {
+		&-key {
+			@include hover {
+				border: remm(2) solid var(--orange-65);
+				color: var(--orange-65);
+				box-shadow: var(--shadow-hover);
+			}
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: fluid(150, 80);
+	}
+
+	&__carousel {
+		&-box {
+			z-index: -1;
+			margin-top: remm(-80);
+			gap: fluid(40, 20);
+
+			padding: fluid(41, 34) fluid(50, 30) fluid(50, 30) fluid(50, 30);
+			padding-top: remm(100);
+		}
+
+		&-picture-inner {
+			display: flex;
+			gap: remm(40);
+			justify-content: center;
+			picture {
+				display: flex;
+			}
+
+			picture:not(:first-of-type) {
+				display: none;
+			}
+
+			@include mobile-above-l {
+				picture:nth-of-type(-n + 2) {
+					display: flex;
+				}
+			}
+
+			@include tablet-above {
+				picture:nth-of-type(-n + 3) {
+					display: flex;
+				}
+			}
+			@include laptop-above {
+				picture:nth-of-type(-n + 4) {
+					display: flex;
+				}
+			}
+		}
+		&-text-inner {
+			display: flex;
+			flex-direction: column-reverse;
+			gap: remm(20);
+			width: 100%;
+
+			@include mobile-above-l {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+		&-button {
+			&-inner {
+				@include flex-center;
+				gap: remm(16);
+
+				@include desktop {
+					gap: remm(20);
+				}
+			}
+		}
+	}
+	&__picture {
+		max-width: fit-content;
+		border: var(--border-gray-15);
+		border-radius: remm(10);
+
+		@include desktop {
+			border-radius: remm(12);
+		}
+	}
+}

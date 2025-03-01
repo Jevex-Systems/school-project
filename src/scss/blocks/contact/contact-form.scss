@@ -1,0 +1,114 @@
+@use '../../helpers' as *;
+
+.form {
+	&__soc1al {
+		gap: remm(20);
+		position: relative;
+		z-index: 2;
+		&-link {
+			padding: remm(16) remm(24);
+			@include laptop-above {
+				padding: remm(16) remm(50);
+			}
+			@include desktop {
+				padding: remm(20) remm(60);
+			}
+		}
+		&-svg {
+			width: remm(26);
+			@include desktop {
+				width: remm(34);
+			}
+		}
+	}
+
+	&__list {
+		padding: fluid(120, 80) fluid(100, 30) fluid(100, 30) fluid(100, 30);
+		translate: 0% -2.5%;
+		gap: remm(30);
+
+		@include tablet-above {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-areas:
+				'label-parent-name label-email'
+				'label-tel label-student-name'
+				'label-student-age label-program-choice'
+				'label-message label-message'
+				'label-button label-button';
+		}
+	}
+
+	&__item {
+		width: 100%;
+		@include tablet-above {
+			display: contents;
+		}
+		&-label {
+			font-size: remm(20);
+			color: var(--gray-30);
+			@include desktop {
+				font-size: remm(22);
+			}
+		}
+		&-input {
+			width: 100%;
+			color: var(--gray-35);
+			padding: fluid(30, 20);
+			border-radius: remm(8);
+			border: var(--border-gray-15);
+			background: var(--orange-99);
+		}
+		&-submit-button {
+			padding: fluid(30, 16) remm(34);
+			border-radius: fluid(12, 8);
+			border: var(--border-gray-15);
+			background: var(--orange-75);
+			font-size: fluid(24, 18);
+		}
+	}
+}
+.input-message {
+	height: remm(161);
+	@include desktop {
+		height: remm(218);
+	}
+}
+.label {
+	display: flex;
+	flex-direction: column;
+	row-gap: fluid(20, 10);
+
+	input:focus,
+	textarea:focus,
+	select:focus {
+		outline: none;
+		box-shadow: var(--shadow-hover);
+		transition-duration: 1s !important;
+	}
+
+	&-parent-name {
+		grid-area: label-parent-name;
+	}
+	&-email {
+		grid-area: label-email;
+	}
+	&-tel {
+		grid-area: label-tel;
+	}
+	&-student-name {
+		grid-area: label-student-name;
+	}
+	&-student-age {
+		grid-area: label-student-age;
+	}
+	&-program-choice {
+		grid-area: label-program-choice;
+	}
+	&-message {
+		grid-area: label-message;
+	}
+	&-button {
+		grid-area: label-button;
+	}
+}
