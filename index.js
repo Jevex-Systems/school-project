@@ -1,1 +1,1 @@
-import"./assets/modulepreload-polyfill-B5Qt9EMX.js";import"./assets/contact-CAc7C4oQ.js";console.log("Welcome to the School Project! Home");
+import"./assets/header-DtKhd9Ne.js";import"./assets/icons-layout-Cyn3s_Xi.js";console.log("Welcome to the School Project! Home");const o=document.querySelectorAll(".question__details");document.querySelector(".question__list");o.forEach(e=>{e.addEventListener("toggle",()=>{e.parentElement.classList.toggle("open",e.open)})});
