@@ -79,16 +79,6 @@
 				justify-content: space-between;
 			}
 		}
-		&-button {
-			&-inner {
-				@include flex-center;
-				gap: remm(16);
-
-				@include desktop {
-					gap: remm(20);
-				}
-			}
-		}
 	}
 	&__picture {
 		max-width: fit-content;

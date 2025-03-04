@@ -1,12 +1,17 @@
 @use 'global';
 @use 'helpers' as *;
 
-h1 {
-	color: var(--orange-65);
-}
-.wraper {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	gap: remm(15);
-}
+@use 'blocks/globals/bordered-shadow-box';
+@use 'blocks/globals/title_inner';
+@use 'blocks/globals/burger-button';
+@use 'blocks/globals/logo';
+@use 'blocks/globals/key';
+@use 'blocks/globals/icon';
+@use 'blocks/globals/header';
+@use 'blocks/globals/footer';
+
+@use 'blocks/home/hero';
+@use 'blocks/academics/special';
+@use 'blocks/home/testimonials';
+@use 'blocks/home/question';
+@use 'blocks/home/explore';

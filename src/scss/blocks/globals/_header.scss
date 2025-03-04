@@ -1,0 +1,107 @@
+@use '../../helpers' as *;
+
+.header {
+	position: fixed;
+	max-width: remm(2200);
+	width: 100%;
+	padding-top: remm(15);
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	padding-inline: remm(10);
+
+	@include laptop-above {
+		padding-inline: remm(50);
+	}
+	&.hidden {
+		margin-top: remm(-82);
+	}
+
+	&__study {
+		text-align: center;
+		background-color: var(--orange-90);
+		@include fluid-text(20, 14);
+		padding-block: remm(12);
+		border: var(--border-gray-15);
+		border-radius: remm(6);
+		margin-bottom: remm(14);
+		position: relative;
+		overflow: hidden;
+	}
+
+	&__body {
+		&-inner {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: var(--absolute-white);
+			border: var(--border-gray-15);
+			border-radius: remm(12);
+			box-shadow: 0 0 1rem 0 var(--gray-15);
+		}
+	}
+
+	&__overlay {
+		@include tablet {
+			position: fixed;
+			inset: 0;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			row-gap: 3rem;
+			padding: 1rem;
+			background-color: var(--orange-95);
+			transition-duration: var(--transition-duration);
+
+			&:not(.is-active) {
+				@include hide;
+				translate: 100%;
+			}
+		}
+	}
+
+	&__menu {
+		overflow: auto;
+		&-list {
+			display: flex;
+			flex-direction: column;
+			row-gap: remm(5);
+			font-size: remm(30);
+			align-items: center;
+
+			@include tablet-above {
+				display: flex;
+				flex-direction: row;
+				font-size: remm(16);
+				color: var(--gray-15);
+			}
+			@include desktop {
+				font-size: remm(20);
+			}
+		}
+		&-item {
+			@include tablet-above {
+				border-left: var(--border-gray-15);
+				&:last-child {
+					background-color: var(--orange-65);
+					border-radius: 0 remm(10) remm(10) 0;
+				}
+				&.is-active {
+					background-color: var(--orange-95);
+					.header__menu-link {
+						border-bottom: var(--border-gray-15);
+					}
+				}
+			}
+			&.is-active .header__menu-link {
+				border-bottom: var(--border-gray-15);
+			}
+		}
+		&-link {
+			padding: fluid(25.5, 21) fluid(34, 28);
+			white-space: nowrap;
+		}
+	}
+}

@@ -41,6 +41,74 @@
 	}
 
 	&--svg {
+		&-main {
+			&-team {
+				width: remm(50);
+				height: remm(50);
+				@include desktop {
+					width: remm(60);
+					height: remm(60);
+				}
+			}
+			&-stars {
+				width: remm(116);
+				height: remm(20);
+
+				@include desktop {
+					width: remm(140);
+					height: remm(24);
+				}
+			}
+			&-summary {
+				&.vertical {
+					position: absolute;
+					border-left: var(--border-gray-15);
+					height: 60%;
+					top: 50%;
+					left: 50%;
+					translate: -50% -50%;
+					transition: opacity 0.5s ease, transform 0.5s ease;
+				}
+				&.horizontal {
+					position: absolute;
+					border-top: var(--border-gray-15);
+					width: 60%;
+					top: 50%;
+					left: 50%;
+					translate: -50% -50%;
+				}
+			}
+			&-arrow-right {
+				width: fluid(30, 20);
+				height: fluid(30, 20);
+			}
+		}
+		&-about {
+			&-color {
+				height: fluid(80, 50);
+			}
+			&-dots {
+				height: fluid(87, 50);
+				width: fluid(87, 50);
+			}
+			&-letter {
+				padding: remm(14);
+				border: var(--border-gray-15);
+				border-radius: remm(6);
+				background-color: var(--orange-90);
+
+				@include laptop-above {
+					padding: remm(16);
+					border-radius: remm(8);
+				}
+				&:hover {
+					background-color: var(--absolute-white);
+					border-color: var(--orange-65);
+					box-shadow: var(--shadow-hover);
+				}
+			}
+		}
+
 		&-header {
 			position: absolute;
 			transition: transform 1s ease-out, opacity 1s ease-out;

@@ -1,0 +1,146 @@
+@use '../../helpers' as *;
+
+.main {
+	margin-top: remm(200);
+	@include desktop {
+		margin-top: remm(230);
+	}
+}
+
+.section-hero {
+	max-width: remm(1920);
+	margin-inline: auto;
+	padding-inline: remm(16);
+	@include tablet-above {
+		padding-inline: remm(80);
+	}
+	@include desktop {
+		padding-inline: remm(50);
+	}
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+	column-gap: fluid(60, 40);
+
+	@include mobile-above-l {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		row-gap: remm(30);
+		grid-template-areas:
+			'img text'
+			'list list';
+	}
+
+	@include laptop-above {
+		align-items: center;
+		justify-items: center;
+		grid-template-areas: 'img box';
+	}
+
+	&__inner {
+		grid-area: box;
+		display: contents;
+		@include laptop-above {
+			display: flex;
+			flex-direction: column;
+			gap: fluid(60, 50);
+		}
+	}
+
+	&__box {
+		&-img {
+			margin-inline: auto;
+			grid-area: img;
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			grid-area: text;
+		}
+	}
+
+	&__span {
+		color: var(--gray-15);
+		@include fluid-text(22, 16);
+		text-decoration: underline;
+		text-underline-offset: 6px;
+		text-align: center;
+
+		@include mobile-above-l {
+			text-align: start;
+		}
+	}
+
+	&__title {
+		font-weight: 800;
+		margin-bottom: remm(18);
+
+		@include mobile-above-l {
+			text-align: start;
+		}
+
+		@include laptop-above {
+			margin-bottom: remm(20);
+		}
+
+		@include desktop {
+			margin-bottom: remm(30);
+		}
+
+		&-span {
+			color: var(--orange-65);
+		}
+	}
+	&__paragraph {
+		color: var(--gray-20);
+		text-align: center;
+
+		@include mobile-above-l {
+			text-align: start;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		box-shadow: 4px 4px 0px 1px #ffbe99;
+		background: var(--orange-95);
+		border: var(--border-gray-15);
+		border-radius: remm(10);
+		row-gap: remm(20);
+		padding: remm(40);
+		grid-area: list;
+
+		@include mobile-above-l {
+			flex-direction: row;
+			column-gap: remm(10);
+			padding: remm(20) remm(40);
+			justify-content: space-around;
+		}
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		place-items: center;
+
+		&-paragraph {
+			font-size: remm(34);
+			color: var(--gray-15);
+			font-family: var(--font-family);
+			font-weight: 800;
+		}
+		&-span {
+			font-size: remm(16);
+			color: var(--gray-15);
+			font-family: var(--font-family);
+			font-weight: 500;
+		}
+
+		&-line {
+			border-top: var(--border-gray-15);
+			width: 77%;
+		}
+	}
+}

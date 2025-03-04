@@ -7,114 +7,16 @@
 		<link rel="stylesheet" href="/about.css" />
 	</head>
 	<body>
-		<header class="header" id="header" data-js-header="">
-			<!-- STUDY BAR -->
+		<load src="./partials/header.html" />
 
-			<div class="header__study">
-				<a href="/" class="header__study-link"
-					><span class="icon--arrow-right"
-						>Admission is Open, Grab your seat now</span
-					></a
-				>
-				<img
-					src="./images/academics/svg/abstract-design-header-corner-left.svg"
-					alt=""
-					class="icon--svg-header svg-one animate"
-					width="50"
-					height="50"
-				/>
-				<img
-					src="./images/academics/svg/abstract-design-lines-circle-left.svg"
-					alt=""
-					class="icon--svg-header svg-two animate"
-					width="33"
-					height="33"
-				/>
-				<img
-					src="./images/academics/svg/abstract-design-lines-circle-right.svg"
-					alt=""
-					class="icon--svg-header svg-three animate"
-					width="50"
-					height="50"
-				/>
-				<img
-					src="./images/academics/svg/abstract-design-header-corner-right.svg"
-					alt=""
-					class="icon--svg-header svg-four animate"
-					width="50"
-					height="50"
-				/>
-			</div>
-
-			<!-- HEADER MENU -->
-
-			<div class="header__body">
-				<div class="header__body-inner">
-					<a class="header__logo logo" href="/" aria-label="Home" title="Home">
-						<img
-							class="logo__image logo__image-header"
-							src="./images/academics/svg/icon-logo.svg"
-							alt=""
-							width="183"
-							height="40"
-					/></a>
-					<div class="header__overlay" data-js-header-overlay="">
-						<nav class="header__menu">
-							<ul class="header__menu-list">
-								<li class="header__menu-item">
-									<a href="./index.html" class="header__menu-link">Home</a>
-								</li>
-								<li class="header__menu-item is-active">
-									<a href="./about.html" class="header__menu-link">About Us</a>
-								</li>
-								<li class="header__menu-item">
-									<a href="./academics.html" class="header__menu-link"
-										>Academics</a
-									>
-								</li>
-								<li class="header__menu-item">
-									<a href="./admission.html" class="header__menu-link"
-										>Admissions</a
-									>
-								</li>
-								<li class="header__menu-item">
-									<a href="./student-life.html" class="header__menu-link"
-										>Student Life</a
-									>
-								</li>
-								<li class="header__menu-item">
-									<a href="./contact.html" class="header__menu-link">Contact</a>
-								</li>
-							</ul>
-						</nav>
-					</div>
-					<div class="header__burger-button visible-tablet">
-						<button
-							class="burger-button"
-							title="Open menu"
-							aria-label="Open menu"
-							data-js-header-burger-button=""
-						>
-							<span class="burger-button__line"></span>
-							<span class="burger-button__line"></span>
-							<span class="burger-button__line"></span>
-						</button>
-					</div>
-				</div>
-			</div>
-		</header>
 		<main class="main">
-			<!-- HERO SECTION -->
-
-			<section class="section-about-hero" id="hero">
+			<section class="section-hero" id="hero">
 				<div class="hero box">
-					<div class="hero__inners">
-						<p class="hero__key-btn key-btn">Overview</p>
-						<h1 class="hero__about-title">
-							Welcome to Little Learners Academy
-						</h1>
+					<div class="hero__inner">
+						<p class="hero__key key">Overview</p>
+						<h1 class="hero__title h3">Welcome to Little Learners Academy</h1>
 					</div>
-					<p class="hero__text">
+					<p class="hero__paragraph">
 						A leading kinder garden school dedicated to providing a nurturing
 						and stimulating environment for young learners. With a commitment to
 						excellence in early education, we believe in shaping curious minds
@@ -125,26 +27,29 @@
 					</p>
 				</div>
 			</section>
-			<!-- /////////////////////////// -->
 
-			<!-- MISSION SECTION -->
-			<section class="mission container" id="mission">
-				<div class="inners">
-					<p class="mission__key-btn key-btn">Mission & Visions</p>
-					<h2 class="overview-title">Our Mission & Visions</h2>
-					<p class="mission__overview-text">
+			<section class="special container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Mission & Visions</p>
+					<h2 class="special__inner-title">Our Mission & Visions</h2>
+					<p class="special__inner-paragraph">
 						We are here to provide a nurturing and inclusive environment where
 						young minds can thrive, fostering a love for learning and personal
 						growth.
 					</p>
 				</div>
-				<ul class="mission__card-list">
-					<li class="mission__card-item box">
-						<div class="mission__inner-card-box">
-							<h3 class="mission__card-item-title">Mission</h3>
-							<img src="./images/about/svg/about-mountain.svg" alt="mountain" />
+				<ul class="special__list about__list">
+					<li class="special__item box">
+						<div class="about__item-inner">
+							<h3 class="special__title h4">Mission</h3>
+							<img
+								src="./images/about/svg/icon-color-mountians.svg"
+								alt="icon of communications levels"
+								class="icon--svg-about-color"
+								height="80"
+							/>
 						</div>
-						<p class="card-text">
+						<p class="special__paragraph">
 							At Little Learners Academy, our mission is to inspire a passion
 							for learning and empower young minds to become confident,
 							compassionate, and creative individuals. We strive to create a
@@ -153,12 +58,17 @@
 							educational journey.
 						</p>
 					</li>
-					<li class="mission__card-item box">
-						<div class="mission__inner-card-box">
-							<h3 class="mission__card-item-title">Vission</h3>
-							<img src="./images/about/svg/about-vision.svg" alt="vision" />
+					<li class="special__item box">
+						<div class="about__item-inner">
+							<h3 class="special__title h4">Vision</h3>
+							<img
+								src="./images/about/svg/icon-color-binoculars.svg"
+								alt="icon of tunder"
+								class="icon--svg-about-color"
+								height="80"
+							/>
 						</div>
-						<p class="card-text">
+						<p class="special__paragraph">
 							Our vision is to be a beacon of educational excellence, where
 							children are encouraged to explore, discover, and express their
 							unique talents. We aim to foster a generation of lifelong learners
@@ -169,16 +79,11 @@
 				</ul>
 			</section>
 
-			<!-- ----//////////////////////---- -->
-
-			<!-- AVARDS SECTION -->
-			<section class="avards container" id="avards">
-				<div class="avards__over-card-container inners">
-					<p class="key-btn">Our Achievements</p>
-					<h2 class="avards__over-card-container-title">
-						Our Awards and Recognitions
-					</h2>
-					<p>
+			<section class="special container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Our Achievements</p>
+					<h2 class="special__inner-title">Our Awards and Recognitions</h2>
+					<p class="special__inner-paragraph">
 						Little Learners Academy takes pride in our commitment to delivering
 						high-quality education and outstanding student experiences. We are
 						honored to have received various awards and recognitions for our
@@ -187,121 +92,87 @@
 						environment for our students.
 					</p>
 				</div>
-				<ul class="avards__list-ava-card">
-					<li class="avards__ava-card box hidden-mobile hidden-tablet">
-						<h3 class="avards__ava-card-title h4">
+				<ul class="awards special__list">
+					<li class="special__item box">
+						<h3 class="special__title h4">
 							Outstanding Early Childhood Education Awar
 						</h3>
-						<p class="avards__paragraph">
+						<p class="special__paragraph">
 							Presented by the National Association for the Education of Young
 							Children (NAEYC) in recognition of Little Learners Academy's
 							commitment to delivering exceptional early childhood education and
 							fostering a nurturing learning environment.
 						</p>
 						<img
-							src="./images/about/svg/about-diagram.svg"
-							alt="diagram"
-							class="icon--svg-avards is-visible"
+							src="./images/about/svg/icon-black-diagram.svg"
+							alt="icon of diagram"
+							class="icon--svg-special"
 							width="24"
 							height="24"
 						/>
 					</li>
-					<li class="avards__ava-card box hidden-mobile hidden-mobile-l">
-						<h3 class="avards__ava-card-title h4">
-							Innovative STEAM Education Award
-						</h3>
-						<p class="avards__paragraph">
+					<li class="special__item box">
+						<h3 class="special__title h4">Innovative STEAM Education Award</h3>
+						<p class="special__paragraph">
 							Awarded by the Education Excellence Association for our pioneering
 							efforts in introducing innovative STEAM (Science, Technology,
 							Engineering, Arts, and Mathematics) programs that ignite
 							creativity and critical thinking in young learners.
 						</p>
 						<img
-							src="./images/about/svg/about-conection.svg"
-							alt="conection"
-							class="icon--svg-avards is-visible"
+							src="./images/about/svg/icon-black-communications-levels.svg"
+							alt="icon of communications levels"
+							class="icon--svg-special"
 							width="24"
 							height="24"
 						/>
 					</li>
-					<li class="avards__ava-card box">
-						<h3 class="avards__ava-card-title h4">
-							Environmental Stewardship Award
-						</h3>
-						<p class="avards__paragraph">
+					<li class="special__item box">
+						<h3 class="special__title h4">Environmental Stewardship Award</h3>
+						<p class="special__paragraph">
 							Received from the Green Earth Society for our dedication to
 							environmental education, sustainable practices, and fostering a
 							love for nature in our students.
 						</p>
 						<img
-							src="./images/about/svg/about-light.svg"
-							alt="lighting"
-							class="icon--svg-avards is-visible"
+							src="./images/about/svg/icon-black-tunder.svg"
+							alt="icon of tunder"
+							class="icon--svg-special"
 							width="24"
 							height="24"
 						/>
 					</li>
 				</ul>
-				<div class="avards__under-card-container">
-					<h4 class="avards__title-more">8 More Awards</h4>
-					<ul class="avards__arrov-list">
-						<li class="avards__arrov-list-item">
-							<button class="avards__cub-btn key-btn">
-								<img
-									src="./images/about/svg/about-pointer.svg"
-									alt="arrov"
-									width="24"
-									height="24"
-								/>
-							</button>
-						</li>
-						<li class="avards__arrov-list-item">
-							<button class="avards__cub-btn key-btn">
-								<img
-									src="./images/about/svg/about-pointer-to-right.svg"
-									alt="arrov"
-									width="24"
-									height="24"
-								/>
-							</button>
-						</li>
-					</ul>
-				</div>
 			</section>
 
-			<!-- ---HISTORY-- -->
-
-			<section class="history container" id="history">
-				<div class="history__over-card-container inners">
-					<p class="key-btn">Our Progressive Journey</p>
-					<h2 class="history__container-title">Our History</h2>
-					<p>
+			<section class="history container">
+				<div class="history__inner title-inner">
+					<p class="history__key key">Our Progressive Journey</p>
+					<h2 class="history__inner-title">Our History</h2>
+					<p class="history__inner-paragraph">
 						Founded with a passion for early education in 2005, our kindergarten
 						school boasts a rich history of empowering young learners to reach
 						their potential through innovative teaching methods and a supportive
 						learning environment
 					</p>
 				</div>
-
-				<!-- timeline -->
-				<ul class="history__year-list box">
-					<li class="history__year-list-item">
-						<div class="history__timeline-year-container box">
-							<span class="history__circle--line"> </span>
-							<span class="history__circle-second"> </span>
+				<ul class="history__list box">
+					<li class="history__item">
+						<div class="history__item-year-box box">
+							<span class="history__item-horizontal"></span>
 							<img
-								src="/images/about/svg/about-cub.svg"
-								alt="cub"
-								width="50"
-								height="50"
+								src="./images/about/svg/icon-color-dots.svg"
+								alt="orange dots"
+								width="87"
+								class="icon--svg-about-dots"
 							/>
-							<p class="h2">2023</p>
+							<span class="history__item-year">2023</span>
 						</div>
-						<div>
-							<h3 class="history__time-line-title h4">
-								Environmental Stewardship Award
+						<div class="history__item-text">
+							<h3 class="history__item-text-title">
+								Resilience and Future Horizons
 							</h3>
-							<p>
+							<p class="history__item-text-paragraph">
 								Adapting to new challenges, we remained committed to our mission
 								of providing an exceptional early education. Looking ahead with
 								optimism, we envision a future filled with boundless
@@ -310,23 +181,22 @@
 							</p>
 						</div>
 					</li>
-					<li class="history__year-list-item">
-						<div class="history__timeline-year-container box">
-							<span class="history__circle"> </span>
-							<span class="history__circle-second"> </span>
+					<li class="history__item">
+						<div class="history__item-year-box box">
+							<span class="history__item-horizontal"></span>
 							<img
-								src="./images/about/svg/about-cub.svg"
-								alt="cub"
-								width="50"
-								height="50"
+								src="./images/about/svg/icon-color-dots.svg"
+								alt="orange dots"
+								width="87"
+								class="icon--svg-about-dots"
 							/>
-							<p class="h2">2017</p>
+							<span class="history__item-year">2017</span>
 						</div>
-						<div>
-							<h3 class="history__time-line-title h4">
+						<div class="history__item-text">
+							<h3 class="history__item-text-title">
 								Innovation and Technology
 							</h3>
-							<p>
+							<p class="history__item-text-paragraph">
 								Innovation became the driving force behind our kindergarten's
 								progress from 2016 to 2020. Embracing the latest educational
 								technologies, we crafted engaging and interactive learning
@@ -334,23 +204,22 @@
 							</p>
 						</div>
 					</li>
-					<li class="history__year-list-item">
-						<div class="history__timeline-year-container box">
-							<span class="history__circle"> </span>
-							<span class="history__circle-second"> </span>
+					<li class="history__item">
+						<div class="history__item-year-box box">
+							<span class="history__item-horizontal"></span>
 							<img
-								src="./images/about/svg/about-cub.svg"
-								alt="cub"
-								width="50"
-								height="50"
+								src="./images/about/svg/icon-color-dots.svg"
+								alt="orange dots"
+								width="87"
+								class="icon--svg-about-dots"
 							/>
-							<p class="h2">2012</p>
+							<span class="history__item-year">2012</span>
 						</div>
-						<div>
-							<h3 class="history__time-line-title h4">
+						<div class="history__item-text">
+							<h3 class="history__item-text-title">
 								Expansion and Recognition
 							</h3>
-							<p>
+							<p class="history__item-text-paragraph">
 								These years marked as a period of expansion and recognition for
 								our school. As we extended our facilities and enhanced our
 								curriculum, we received accolades for our commitment to quality
@@ -358,21 +227,20 @@
 							</p>
 						</div>
 					</li>
-					<li class="history__year-list-item">
-						<div class="history__timeline-year-container box">
-							<span class="history__circle"> </span>
-							<span class="history__circle-second"> </span>
+					<li class="history__item">
+						<div class="history__item-year-box box">
+							<span class="history__item-horizontal"></span>
 							<img
-								src="./images/about/svg/about-cub.svg"
-								alt="cub"
-								width="50"
-								height="50"
+								src="./images/about/svg/icon-color-dots.svg"
+								alt="orange dots"
+								width="87"
+								class="icon--svg-about-dots"
 							/>
-							<p class="h2">2005</p>
+							<span class="history__item-year">2005</span>
 						</div>
-						<div>
-							<h3 class="history__time-line-title h4">Inception and Growth</h3>
-							<p>
+						<div class="history__item-text">
+							<h3 class="history__item-text-title">Inception and Growth</h3>
+							<p class="history__item-text-paragraph">
 								Established in 2005, our kindergarten school began its journey
 								with a vision to provide a nurturing space for young minds to
 								explore, learn, and grow. Over the next five years, we witnessed
@@ -382,12 +250,12 @@
 					</li>
 				</ul>
 			</section>
-			<!-- /////// OUR TEAM /////////////// -->
-			<section class="our-team container" id="ourTeam">
-				<div class="our-team__inners inners">
-					<p class="key-btn">Our Teachers With Experties</p>
-					<h2 class="our-team__container-title">Our Team Members</h2>
-					<p>
+
+			<section class="special container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Our Teachers With Experties</p>
+					<h2 class="special__inner-title">Our Team Members</h2>
+					<p class="special__inner-paragraph">
 						At Little Learners Academy, our teaching team is the heart of our
 						educational journey. We take great pride in employing highly
 						qualified and passionate educators who possess a deep understanding
@@ -396,70 +264,30 @@
 						and fostering a love for learning.
 					</p>
 				</div>
-				<!-- card -->
-				<ul class="our-team__team-list">
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team1-mob.webp   1x,
-											./images/about/mob/team1-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team1-pc.webp   1x,
-											./images/about/pc/team1-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team1-tab.webp   1x,
-											./images/about/ntab/team1-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team1-mob.webp   1x,
-											./images/about/mob/team1-mob2x.webp 2x
-										"
-										src="./images/about/mob/team1-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Ms. Sarah Anderson</p>
-							</div>
+				<ul class="about__list special__list">
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team.png"
+								alt="Ms. Sarah Anderson"
+								width="100"
 							/>
+							<h3 class="special__title h4">Ms. Sarah Anderson</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification:Bachelor's Degree in Early Childhood Education
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								Ms. Sarah is a passionate educator with over 10 years of
 								experience in guiding young minds. Her warm and nurturing
 								approach creates a welcoming classroom environment where
@@ -467,68 +295,29 @@
 							</p>
 						</div>
 					</li>
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team2-mob.webp   1x,
-											./images/about/mob/team2-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team2-pc.webp   1x,
-											./images/about/pc/team2-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team2-tab.webp   1x,
-											./images/about/ntab/team2-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team2-mob.webp   1x,
-											./images/about/mob/team2-mob2x.webp 2x
-										"
-										src="./images/about/mob/team2-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Mr. David Roberts</p>
-							</div>
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team-1.png"
+								alt="Mr. David Roberts"
+								width="100"
 							/>
+							<h3 class="special__title h4">Mr. David Roberts</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification: Master's Degree in Elementary Education
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								With a strong background in elementary education, Mr. David
 								brings a creative and interactive teaching style to his
 								classroom. His enthusiasm for learning inspires students to ask
@@ -536,68 +325,29 @@
 							</p>
 						</div>
 					</li>
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team3-mob.webp   1x,
-											./images/about/mob/team3-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team3-pc.webp   1x,
-											./images/about/pc/team3-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team3-tab.webp   1x,
-											./images/about/ntab/team3-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team3-mob.webp   1x,
-											./images/about/mob/team3-mob2x.webp 2x
-										"
-										src="./images/about/mob/team3-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Ms. Emily Hernandez</p>
-							</div>
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team-2.png"
+								alt="Ms. Emily Hernandez"
+								width="100"
 							/>
+							<h3 class="special__title h4">Ms. Emily Hernandez</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification: Diploma in Child Psychology
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								Ms. Emily's expertise in child psychology enables her to
 								understand each child's unique needs and provide individualized
 								support. Her caring nature fosters a strong sense of belonging
@@ -605,136 +355,58 @@
 							</p>
 						</div>
 					</li>
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team4-mob.webp   1x,
-											./images/about/mob/team4-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team4-pc.webp   1x,
-											./images/about/pc/team4-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team4-tab.webp   1x,
-											./images/about/ntab/team4-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team4-mob.webp   1x,
-											./images/about/mob/team4-mob2x.webp 2x
-										"
-										src="./images/about/mob/team4-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Mr. Michael Turner</p>
-							</div>
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team-3.png"
+								alt="Mr. Michael Turner"
+								width="100"
 							/>
+							<h3 class="special__title h4">Mr. Michael Turner</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification: Bachelor's Degree in Physical Education
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								Mr. Michael's passion for physical fitness and sports shines
 								through in his energetic classes. He encourages students to stay
 								active, promoting teamwork and a healthy lifestyle.
 							</p>
 						</div>
 					</li>
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team5-mob.webp   1x,
-											./images/about/mob/team5-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team5-pc.webp   1x,
-											./images/about/pc/team5-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team5-tab.webp   1x,
-											./images/about/ntab/team5-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team5-mob.webp   1x,
-											./images/about/mob/team5-mob2x.webp 2x
-										"
-										src="./images/about/mob/team5-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Ms. Jessica Lee</p>
-							</div>
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team-4.png"
+								alt="Ms. Jessica Lee"
+								width="100"
 							/>
+							<h3 class="special__title h4">Ms. Jessica Lee</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification: Master's Degree in Special Education
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								Ms. Jessica's specialization in special education allows her to
 								create an inclusive and supportive learning environment for all
 								students. She is dedicated to helping every child reach their
@@ -742,68 +414,29 @@
 							</p>
 						</div>
 					</li>
-					<li class="our-team__team-main-box box">
-						<div class="our-team__team-title-box">
-							<div class="our-team__team-title-box-inside">
-								<picture>
-									<source
-										media="(max-width: 1439px)"
-										width="60"
-										height="60"
-										srcset="
-											./images/about/mob/team6-mob.webp   1x,
-											./images/about/mob/team6-mob2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1920px)"
-										width="100"
-										height="100"
-										srcset="
-											./images/about/pc/team6-pc.webp   1x,
-											./images/about/pc/team6-pc2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<source
-										media="(min-width: 1440px)"
-										width="80"
-										height="80"
-										srcset="
-											./images/about/ntab/team6-tab.webp   1x,
-											./images/about/ntab/team6-tab2x.webp 2x
-										"
-										type="image/webp"
-									/>
-
-									<img
-										srcset="
-											./images/about/mob/team6-mob.webp   1x,
-											./images/about/mob/team6-mob2x.webp 2x
-										"
-										src="./images/about/mob/team6-mob.png"
-										alt="Language Arts"
-										class="learn__picture"
-										width="60"
-										height="60"
-									/>
-								</picture>
-								<p class="our-team__title-team-name">Mr. William Parker</p>
-							</div>
+					<li class="special__item box">
+						<div class="about__item-team">
 							<img
-								src="./images/about/svg/about-envelope.svg"
-								alt="Envelope"
-								class="our-team__team-svg"
+								class="about__item-photo"
+								src="./images/about/team/team-5.png"
+								alt="Mr. William Parker"
+								width="100"
 							/>
+							<h3 class="special__title h4">Mr. William Parker</h3>
+							<a class="letter-link" href="mailto:#">
+								<img
+									src="./images/about/svg/icon-black-letter.svg"
+									alt="icon of letter"
+									class="icon--svg-about-letter"
+									height="24"
+								/>
+							</a>
 						</div>
-						<div class="our-team__team-text-box">
-							<h5 class="our-team__team-text-box-title">
+						<div class="about__item-text">
+							<h4 class="special__title h5">
 								Qualification: Bachelor's Degree in Fine Arts
-							</h5>
-							<p class="our-team__team-text-box-text">
+							</h4>
+							<p class="special__paragraph">
 								Mr. William's background in fine arts brings creativity and
 								imagination to his classroom. Through art projects and
 								activities, he nurtures the artistic expression and
@@ -814,243 +447,11 @@
 				</ul>
 			</section>
 		</main>
-		<footer class="section-footer" id="footer">
-			<div class="footer">
-				<div class="footer__inner">
-					<div class="footer__adress">
-						<a href="/" class="footer__logo logo" aria-label="Home" title="Home"
-							><img src="./images/about/svg/icon-logo.svg" alt="Home"
-						/></a>
-						<p class="footer__slogan">
-							We believe in the power of play to foster creativity,
-							problem-solving skills, and imagination.
-						</p>
-						<ul class="footer__contacts">
-							<li class="footer__contacts-item">
-								<a
-									href="mailto:hello@littlelearners.com"
-									class="footer__contacts-link"
-								>
-									<img
-										src="./images/about/svg/icon-black-mail.svg"
-										alt=""
-										class="icon--svg-footer footer__contacts-link-icon"
-										width="32"
-										height="32"
-									/>
-									hello@littlelearners.com
-								</a>
-							</li>
-							<li class="footer__contacts-item">
-								<a href="tel:+9191813232309" class="footer__contacts-link">
-									<img
-										src="./images/about/svg/icon-black-telephone.svg"
-										alt=""
-										class="icon--svg-footer footer__contacts-link-icon"
-										width="32"
-										height="32"
-									/>
-									+91 91813 23 2309
-								</a>
-							</li>
-							<li class="footer__contacts-item">
-								<a
-									href="https://www.google.com/maps?q=48.8588443,2.2943506"
-									class="footer__contacts-link"
-									target="_blank"
-								>
-									<img
-										src="./images/about/svg/icon-black-location.svg"
-										alt=""
-										class="icon--svg-footer footer__contacts-link-icon"
-										width="32"
-										height="32"
-									/>
-									Somewhere in the World
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class="footer__nav">
-						<ul class="footer__menu">
-							<li class="footer__menu-list">
-								<ul class="footer__submenu">
-									<li class="footer__submenu-list">
-										<a href="/" class="footer__submenu-link">Home</a>
-									</li>
-									<li class="footer__submenu-list">
-										<a href="./index.html#features" class="footer__submenu-link"
-											>Features</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./index.html#our-testimonials"
-											class="footer__submenu-link"
-											>Our Testimonials</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a href="./index.html#faq" class="footer__submenu-link"
-											>FAQ</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="footer__menu-list">
-								<ul class="footer__submenu">
-									<li class="footer__submenu-list">
-										<a href="./academics.html" class="footer__submenu-link"
-											>Academics</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./academics.html#special-features"
-											class="footer__submenu-link"
-											>Special Features</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./academics.html#gallery"
-											class="footer__submenu-link"
-											>Gallery</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="footer__menu-list">
-								<ul class="footer__submenu">
-									<li class="footer__submenu-list">
-										<a href="./about.html" class="footer__submenu-link"
-											>About Us</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./about.html#our-mission"
-											class="footer__submenu-link"
-											>Our Mission</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./about.html#our-vission"
-											class="footer__submenu-link"
-											>Our Vission</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./about.html#awards-and-recognitions"
-											class="footer__submenu-link"
-											>Awards and Recognitions</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a href="./about.html#history" class="footer__submenu-link"
-											>History</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a href="./about.html#teachers" class="footer__submenu-link"
-											>Teachers</a
-										>
-									</li>
-								</ul>
-							</li>
-							<li class="footer__menu-list">
-								<ul class="footer__submenu">
-									<li class="footer__submenu-list">
-										<a href="./contact.html" class="footer__submenu-link"
-											>Contact Us</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./contact.html#information"
-											class="footer__submenu-link"
-											>Information</a
-										>
-									</li>
-									<li class="footer__submenu-list">
-										<a
-											href="./contact.html#map-&-direction"
-											class="footer__submenu-link"
-											>Map & Direction</a
-										>
-									</li>
-								</ul>
-							</li>
-						</ul>
-					</div>
-				</div>
-				<div class="footer__terms-sol1al">
-					<ul class="footer__terms">
-						<li class="footer__terms-list">
-							<a href="/" class="footer__terms-link">Terms of Service</a>
-						</li>
-						<li class="footer__terms-list">
-							<a href="/" class="footer__terms-link">Privacy Policy</a>
-						</li>
-						<li class="footer__terms-list">
-							<a href="/" class="footer__terms-link">Cookie Policy</a>
-						</li>
-					</ul>
-					<ul class="footer__soc1al">
-						<li class="footer__soc1al-list">
-							<a
-								href="https://www.facebook.com/"
-								class="footer__soc1al-link"
-								target="_blank"
-								aria-label="facebook"
-								title="facebook"
-								><img
-									width="20"
-									height="20"
-									src="./images/about/svg/about-fb.svg"
-									alt="facebook"
-									class="icon--svg-footer-soc1al"
-							/></a>
-						</li>
-						<li class="footer__soc1al-list">
-							<a
-								href="x.com"
-								class="footer__soc1al-link"
-								target="_blank"
-								aria-label="twitter"
-								title="twitter"
-								><img
-									width="20"
-									height="20"
-									src="./images/about/svg/about-twitter.svg"
-									alt="twitter"
-									class="icon--svg-footer-soc1al"
-							/></a>
-						</li>
-						<li class="footer__soc1al-list">
-							<a
-								href="linkedin.com"
-								class="footer__soc1al-link"
-								target="_blank"
-								aria-label="linkedin"
-								title="linkedin"
-								><img
-									width="20"
-									height="20"
-									src="./images/about/svg/about-linked.svg"
-									alt="linked in"
-									class="icon--svg-footer-soc1al"
-							/></a>
-						</li>
-					</ul>
-				</div>
-				<p class="footer__copyright">
-					Copyright © [2023] Little Learners Academy. All rights reserved.
-				</p>
-			</div>
-		</footer>
+
+		<load src="./partials/footer.html" />
+
+		<script type="module" src="./js/components/header.js"></script>
+		<script type="module" src="./js/components/icons-layout.js"></script>
 		<script type="module" src="/js/about.js"></script>
 	</body>
 </html>

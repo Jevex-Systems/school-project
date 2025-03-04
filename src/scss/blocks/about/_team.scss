@@ -1,0 +1,44 @@
+@use '../../helpers' as *;
+
+.about {
+	&__item {
+		&-team {
+			display: grid;
+			grid-template-columns: auto 1fr auto;
+			width: 100%;
+			align-items: center;
+			gap: remm(16);
+
+			& .special__title {
+				text-align: start;
+			}
+		}
+		&-photo {
+			width: remm(60);
+			border: var(--border-gray-15);
+			border-radius: remm(8);
+
+			@include laptop-above {
+				border-radius: remm(10);
+				width: remm(80);
+			}
+			@include desktop {
+				border-radius: remm(12);
+				width: remm(100);
+			}
+		}
+		&-text {
+			display: flex;
+			flex-direction: column;
+			gap: fluid(20, 12);
+			border: var(--border-gray-15);
+			border-radius: remm(10);
+			background-color: var(--orange-97);
+			padding: fluid(30, 20);
+
+			@include desktop {
+				border-radius: remm(12);
+			}
+		}
+	}
+}

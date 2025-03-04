@@ -21,6 +21,7 @@
 		flex-direction: column;
 		height: 100%;
 		row-gap: remm(51);
+		overflow: hidden;
 
 		@include desktop {
 			row-gap: remm(71);

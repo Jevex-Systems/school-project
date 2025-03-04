@@ -1,0 +1,43 @@
+@use '../../helpers' as *;
+
+.testimonials {
+	margin-inline: auto;
+
+	@include laptop-above {
+		max-width: 90%;
+	}
+
+	& .special__item {
+		justify-content: center;
+		align-items: center;
+		gap: fluid(30, 20);
+	}
+}
+
+.icon-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: remm(12);
+
+	& .special__title {
+		color: var(--gray-20);
+		font-weight: 600;
+	}
+}
+
+.icon-bg {
+	padding: 10px;
+	border-radius: 100px;
+	border: var(--border-gray-20);
+	background: var(--orange-97);
+}
+
+.testimonials.special__list {
+	@include mobile-above-l {
+		grid-template-columns: 1fr;
+	}
+	@include tablet-above {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

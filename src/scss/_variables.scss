@@ -30,8 +30,10 @@
 	--shadow-main: #{remm(6)} #{remm(6)} 0 #{remm(2)} var(--gray-00);
 	--shadow-main-etc: #{remm(6)} #{remm(6)} 0 #{remm(1)} var(--gray-00);
 	--shadow-button: #{remm(4)} #{remm(4)} 0 #{remm(2)} var(--gray-00);
+	--shadow-link: #{remm(2)} #{remm(2)} 0 #{remm(1)} var(--gray-00);
 	--shadow-list-box: #{remm(4)} #{remm(4)} 0 #{remm(1)} var(--gray-00);
 	--shadow-hover: 0 0 #{remm(9)} #{remm(8)} var(--orange-65);
+	--shadow-lines: #{remm(-2)} #{remm(2)} #{remm(0)} #{remm(6)} var(--orange-80);
 
 	--border-gray-15: #{remm(2)} solid var(--gray-15);
 	--border-gray-20: #{remm(2)} solid var(--gray-20);

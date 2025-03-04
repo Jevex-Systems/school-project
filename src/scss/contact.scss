@@ -7,13 +7,10 @@
 @use 'blocks/globals/logo';
 @use 'blocks/globals/key';
 @use 'blocks/globals/icon';
+@use 'blocks/globals/header';
+@use 'blocks/globals/footer';
 
-@use 'blocks/academics/header';
 @use 'blocks/academics/hero';
-@use 'blocks/academics/footer';
 @use 'blocks/contact/hero-section';
 @use 'blocks/contact/contact-form.scss';
 
-body {
-	user-select: none;
-}

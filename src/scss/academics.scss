@@ -7,14 +7,10 @@
 @use 'blocks/globals/logo';
 @use 'blocks/globals/key';
 @use 'blocks/globals/icon';
+@use 'blocks/globals/header';
+@use 'blocks/globals/footer';
 
-@use 'blocks/academics/header';
 @use 'blocks/academics/hero';
 @use 'blocks/academics/special';
 @use 'blocks/academics/learn';
 @use 'blocks/academics/gallery';
-@use 'blocks/academics/footer';
-
-body {
-	user-select: none;
-}

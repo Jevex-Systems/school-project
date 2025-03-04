@@ -7,19 +7,558 @@
 		<link rel="stylesheet" href="/home.css" />
 	</head>
 	<body>
-		<h1 class="logo">Welcome to the School Project</h1>
-		<h2 class="logo logo--yellow">Home</h2>
-		<div class="container wraper" data-wraper="">
-			<a class="wrapper__item wraper__item-isActive" href="./index.html"
-				>home</a
-			>
-			<a href="./about.html">about</a>
-			<a href="./academics.html">academics</a>
-			<a href="./admission.html">admission</a>
-			<a href="./contact.html">contact</a>
-			<a href="./student-life.html">student-life</a>
-			<script type="module" src="/js/contact.js"></script>
-		</div>
+		<load src="./partials/header.html" />
+
+		<main class="main">
+			<section class="hero section-hero container">
+				<div class="hero__box-img">
+					<picture>
+						<source
+							media="(min-width: 1920px)"
+							width="765"
+							height="785"
+							srcset="
+								./images/main/desktop/hero-image.webp    1x,
+								./images/main/desktop/hero-image-2x.webp 2x
+							"
+							type="image/webp"
+						/>
+						<source
+							media="(min-width: 1440px)"
+							width="615"
+							height="663"
+							srcset="
+								./images/main/laptop/hero-image.webp    1x,
+								./images/main/laptop/hero-image-2x.webp 2x
+							"
+							type="image/webp"
+						/>
+						<img
+							srcset="
+								./images/main/mobile/hero-image.webp    1x,
+								./images/main/mobile/hero-image-2x.webp 2x
+							"
+							src="./images/main/mobile/hero-image.jpg"
+							alt="Choldrens"
+							class="learn__picture"
+							width="358"
+							height="410"
+						/>
+					</picture>
+				</div>
+				<div class="hero__inner">
+					<div class="hero__box-text">
+						<span class="hero__span">Welcome to Little Learners Academy</span>
+						<h1 class="hero__title">
+							Where Young Minds Blossom and
+							<span class="hero__title-span">Dreams Take Flight.</span>
+						</h1>
+						<p class="hero__paragraph">
+							Our kinder garden school provides a nurturing and stimulating
+							environment, fostering a love for learning that lasts a lifetime.
+							Join us as we embark on an exciting educational journey together!
+						</p>
+					</div>
+					<ul class="hero__list">
+						<li class="hero__item">
+							<p class="hero__item-paragraph">+7000</p>
+							<span class="hero__item-span">Students Passed Out</span>
+						</li>
+						<li class="hero__item visible-mobile-l">
+							<span class="hero__item-line"></span>
+						</li>
+						<li class="hero__item">
+							<p class="hero__item-paragraph">+37</p>
+							<span class="hero__item-span">Awards & Recognitions</span>
+						</li>
+						<li class="hero__item visible-mobile-l">
+							<span class="hero__item-line"></span>
+						</li>
+						<li class="hero__item">
+							<p class="hero__item-paragraph">+15</p>
+							<span class="hero__item-span">Experience Educators</span>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="special container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Children Deserve Bright Future</p>
+					<h2 class="special__inner-title">Our Benefits</h2>
+					<p class="special__inner-paragraph">
+						With a dedicated team of experienced educators, state-of-the-art
+						facilities, and a comprehensive curriculum, we aim to lay a strong
+						foundation for your child's future.
+					</p>
+				</div>
+				<ul class="special__list">
+					<li class="special__item box">
+						<h3 class="special__title h4">Holistic Learning Approach</h3>
+						<p class="special__paragraph">
+							Our curriculum focuses on nurturing cognitive, social, emotional,
+							and physical development, ensuring a well-rounded education.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-graduation-cap.svg"
+							alt="icon of graduation cap"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+					<li class="special__item box">
+						<h3 class="special__title h4">Experienced Educators</h3>
+						<p class="special__paragraph">
+							Our passionate and qualified teachers create a supportive and
+							stimulating learning environment.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-crown.svg"
+							alt="icon of crown"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+					<li class="special__item box">
+						<h3 class="special__title h4">Nurturing Environment</h3>
+						<p class="special__paragraph">
+							We prioritize safety and provide a warm and caring atmosphere for
+							every child.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-mask.svg"
+							alt="icon of mask"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+					<li class="special__item box">
+						<h3 class="special__title h4">Play-Based Learning</h3>
+						<p class="special__paragraph">
+							We believe in the power of play to foster creativity,
+							problem-solving skills, and imagination.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-flag.svg"
+							alt="icon of flag"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+					<li class="special__item box">
+						<h3 class="special__title h4">Individualized Attention</h3>
+						<p class="special__paragraph">
+							Our small class sizes enable personalized attention, catering to
+							each child's unique needs.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-attention.svg"
+							alt="icon of attention"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+					<li class="special__item box">
+						<h3 class="special__title h4">Parent Involvement</h3>
+						<p class="special__paragraph">
+							We foster a strong parent-school partnership to ensure seamless
+							communication and collaboration.
+						</p>
+						<img
+							src="./images/main/svg/icon-black-parent.svg"
+							alt="icon of parent"
+							class="icon--svg-special"
+							width="24"
+							height="24"
+						/>
+					</li>
+				</ul>
+			</section>
+
+			<section class="special container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Their Happy Words 🤗</p>
+					<h2 class="special__inner-title">Our Testimonials</h2>
+					<p class="special__inner-paragraph">
+						Our testimonials are heartfelt reflections of the nurturing
+						environment we provide, where children flourish both academically
+						and emotionally.
+					</p>
+				</div>
+				<ul class="special__list testimonials">
+					<li class="special__item box">
+						<div class="icon-inner">
+							<div class="icon-bg">
+								<img
+									src="./images/main/svg/icon-color-girl.svg"
+									alt="icon of flag"
+									class="icon--svg-main-team"
+									width="50"
+									height="50"
+								/>
+							</div>
+							<h3 class="special__title h5">Jennifer B</h3>
+						</div>
+						<img
+							src="./images/main/svg/icon-color-stars.svg"
+							alt="icon of flag"
+							class="icon--svg-main-stars"
+							width="116"
+							height="20"
+						/>
+						<p class="special__paragraph">
+							Little Learners Academy has been a second home for my child. The
+							caring staff and engaging programs have made her excited to go to
+							school every day!
+						</p>
+					</li>
+					<li class="special__item box">
+						<div class="icon-inner">
+							<div class="icon-bg">
+								<img
+									src="./images/main/svg/icon-color-man.svg"
+									alt="icon of flag"
+									class="icon--svg-main-team"
+									width="50"
+									height="50"
+								/>
+							</div>
+							<h3 class="special__title h5">David K</h3>
+						</div>
+						<img
+							src="./images/main/svg/icon-color-stars.svg"
+							alt="icon of flag"
+							class="icon--svg-main-stars"
+							width="116"
+							height="20"
+						/>
+						<p class="special__paragraph">
+							Choosing Little Learners Academy for my daughter was the best
+							decision. She has thrived in their nurturing and stimulating
+							environment.
+						</p>
+					</li>
+					<li class="special__item box">
+						<div class="icon-inner">
+							<div class="icon-bg">
+								<img
+									src="./images/main/svg/icon-color-women.svg"
+									alt="icon of flag"
+									class="icon--svg-main-team"
+									width="50"
+									height="50"
+								/>
+							</div>
+							<h3 class="special__title h5">Emily L</h3>
+						</div>
+						<img
+							src="./images/main/svg/icon-color-stars.svg"
+							alt="icon of flag"
+							class="icon--svg-main-stars"
+							width="116"
+							height="20"
+						/>
+						<p class="special__paragraph">
+							My son's social and academic growth has been remarkable since
+							joining Little Learners Academy. I am grateful for the supportive
+							and dedicated teachers.
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<section class="question container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Solutions For The Doubts</p>
+					<h2 class="special__inner-title">Frequently Asked Questions</h2>
+					<p class="special__inner-paragraph">
+						Find all the essential information you need in our FAQ section,
+						designed to address the most frequently asked questions and help you
+						make informed decisions for your child's education.
+					</p>
+				</div>
+				<div class="question__list">
+					<ul class="question__list--left">
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										What are the school hours at Little Learners Academy?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									Our school hours are from 8:00 AM to 3:00 PM, Monday to
+									Friday. We also offer extended care options for parents who
+									need early drop-off or late pick-up.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										Is there a uniform policy for students at Little Learners
+										Academy?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									Yes, students are required to wear a school uniform. Details
+									about the dress code can be found in our parent handbook.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										What extracurricular activities are available for students?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									We offer a variety of activities, including arts and crafts,
+									music, sports, and language clubs.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										How do you handle food allergies and dietary restrictions?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									We work closely with parents to accommodate dietary needs and
+									ensure a safe meal environment for all students.
+								</p>
+							</details>
+						</li>
+					</ul>
+					<ul class="question__list--left">
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										What is the teacher-to-student ratio at Little Learners
+										Academy?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									Our small class sizes maintain an average ratio of 1 teacher
+									per 10 students to ensure personalized attention.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										How do you handle discipline and behavior management?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									We use positive reinforcement and a structured approach to
+									guide behavior while promoting a respectful learning
+									environment.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										How do I apply for admission to Little Learners Academy?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									You can apply online through our website or visit our
+									admissions office for assistance with the application process.
+								</p>
+							</details>
+						</li>
+						<li class="question__item box">
+							<details class="question__details">
+								<summary class="question__summary">
+									<p class="question__summary-paragraph">
+										What safety measures are in place at Little Learners
+										Academy?
+									</p>
+									<div class="question__summary-icon">
+										<span class="icon--svg-main-summary vertical"></span>
+										<span class="icon--svg-main-summary horizontal"></span>
+									</div>
+								</summary>
+								<span class="question__summary-open-line"></span>
+								<p class="question__summary-open-paragraph">
+									The safety of our students is our top priority. We have secure
+									entry points, trained staff, regular emergency drills, and
+									strict pick-up procedures to ensure a safe environment.
+								</p>
+							</details>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="explore container">
+				<div class="special__inner title-inner">
+					<p class="special__key key">Explore More</p>
+					<h2 class="special__inner-title">Navigate through our Pages</h2>
+					<p class="special__inner-paragraph">
+						Your gateway to discovering a wealth of valuable information about
+						our kindergarten school, Feel free to explore and learn more about
+						the enriching experiences that await your child at our kindergarten
+						school
+					</p>
+				</div>
+				<ul class="explore__list">
+					<li class="explore__item box">
+						<h3 class="explore__item-title">About Us</h3>
+						<div class="explore__item-lines">
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+						</div>
+						<p class="explore__item-paragraph">
+							Discover our Mission, Values, and our unwavering commitment to
+							providing the best learning experience for your child. Learn about
+							our passionate educators and our engaging approach to early
+							education.
+						</p>
+						<a href="./about.html" class="explore__item-link"
+							>Learn More<img
+								src="./images/main/svg/icon-black-arrow-right.svg"
+								alt="arrow right"
+								class="icon--svg-main-arrow-right"
+								width="20"
+								height="20"
+						/></a>
+					</li>
+					<li class="explore__item box">
+						<h3 class="explore__item-title">Academics</h3>
+						<div class="explore__item-lines">
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+						</div>
+						<p class="explore__item-paragraph">
+							Delve into our comprehensive academic programs designed to
+							stimulate young minds, foster creativity, and encourage a love for
+							learning. Explore our well-rounded curriculum that nurtures both
+							intellectual and social development.
+						</p>
+						<a href="./academics.html" class="explore__item-link"
+							>Learn More<img
+								src="./images/main/svg/icon-black-arrow-right.svg"
+								alt="arrow right"
+								class="icon--svg-main-arrow-right"
+								width="20"
+								height="20"
+						/></a>
+					</li>
+					<li class="explore__item box">
+						<h3 class="explore__item-title">Student Life</h3>
+						<div class="explore__item-lines">
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+						</div>
+						<p class="explore__item-paragraph">
+							Peek into the vibrant and enriching world of Student Life at
+							Little Learners Academy. Discover the array of extracurricular
+							activities, arts and crafts, sports, and social events that make
+							our school experience truly memorable.
+						</p>
+						<a href="./student-life.html" class="explore__item-link"
+							>Learn More<img
+								src="./images/main/svg/icon-black-arrow-right.svg"
+								alt="arrow right"
+								class="icon--svg-main-arrow-right"
+								width="20"
+								height="20"
+						/></a>
+					</li>
+					<li class="explore__item box">
+						<h3 class="explore__item-title">Admissions</h3>
+						<div class="explore__item-lines">
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+							<span class="explore__item-lines-span"></span>
+						</div>
+						<p class="explore__item-paragraph">
+							Learn about our Enrollment Process and how to secure your child's
+							place at Little Learners Academy. Find information about our
+							admission requirements, application deadlines, and available
+							spaces.
+						</p>
+						<a href="./admission.html" class="explore__item-link"
+							>Learn More<img
+								src="./images/main/svg/icon-black-arrow-right.svg"
+								alt="arrow right"
+								class="icon--svg-main-arrow-right"
+								width="20"
+								height="20"
+						/></a>
+					</li>
+				</ul>
+			</section>
+		</main>
+
+		<load src="./partials/footer.html" />
+		<script type="module" src="./js/components/header.js"></script>
+		<script type="module" src="./js/components/icons-layout.js"></script>
 		<script type="module" src="/js/home.js"></script>
 	</body>
 </html>

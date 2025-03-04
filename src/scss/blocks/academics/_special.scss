@@ -16,6 +16,11 @@
 		@include tablet-above {
 			grid-template-columns: repeat(3, 1fr);
 		}
+		&.about__list {
+			@include tablet-above {
+				grid-template-columns: repeat(2, 1fr);
+			}
+		}
 	}
 
 	&__item {

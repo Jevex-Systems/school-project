@@ -7,13 +7,9 @@
 @use 'blocks/globals/logo';
 @use 'blocks/globals/key';
 @use 'blocks/globals/icon';
+@use 'blocks/globals/header';
+@use 'blocks/globals/footer';
 
-@use 'blocks/academics/header';
 @use 'blocks/academics/hero';
 @use 'blocks/admission/admission-process.scss';
 @use 'blocks/admission/fee.scss';
-@use 'blocks/academics/footer';
-
-body {
-	user-select: none;
-}
